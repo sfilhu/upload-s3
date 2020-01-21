@@ -1,0 +1,21 @@
+{
+  "name": "nodeless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "optimize.js",
+  "scripts": {
+    "predeploy": "rm -rf node_modules/sharp && npm i --platform=linux --arch=x64 --target=12.14.1 sharp",
+    "deploy": "serverless deploy -v",
+    "postdeploy": "rm -rf node_modules/sharp && npm i sharp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "sharp": "^0.24.0"
+  }
+}
