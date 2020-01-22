@@ -26,7 +26,7 @@ PostSchema.pre('remove', function() {
         return s3.deleteObject({
             Bucket: 'upload-images-s3',
             Key: this.key,
-        })
+        }).promise();
     }
 })
 
