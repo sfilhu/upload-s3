@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import 'react-circular-progressbar/dist/styles.css';
 
 export default createGlobalStyle`
     * {
@@ -17,7 +18,7 @@ export default createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
-    html, border-style, #root {
+    html, body, #root {
         height: 100%;
     }
 `
